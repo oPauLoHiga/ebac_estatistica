@@ -1,3 +1,12 @@
-.deps/
-__pycache__/
-.ipynb_checkpoints/
+# Publicar apenas o código principal, instruções e imagens dos gráficos.
+/*
+!/.gitignore
+!/analise.py
+!/requirements.txt
+!/README.md
+!/resultados/
+
+/resultados/*
+!/resultados/boxplot.png
+!/resultados/barras.png
+!/resultados/mapa.png

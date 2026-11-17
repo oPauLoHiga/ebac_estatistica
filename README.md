@@ -1,16 +1,20 @@
 # Estatística descritiva — EBAC, módulo 13
 
 Análise de 1.107 registros de produtos de um supermercado chileno, com pandas,
-Matplotlib e Plotly. Material original do curso preservado.
+Matplotlib e Plotly. O repositório contém o código principal e as três imagens
+dos gráficos. Os materiais de apoio e demais resultados ficam apenas na pasta local.
 
 ## Como executar
+
+Coloque a base CSV fornecida pelo curso na mesma pasta de `analise.py`.
+A base usa vírgulas como separador e deve conter `Categoria`, `Marca`,
+`Preco_Normal` e `Desconto`. Mantenha apenas a base de entrada nessa pasta.
 
 ```powershell
 python -m pip install -r requirements.txt
 python analise.py
 ```
 
-Abra `Resolucao_M13.ipynb` para acompanhar os cálculos em etapas.
 Para exportar também a imagem do treemap, com Chrome instalado:
 
 ```powershell
@@ -22,10 +26,10 @@ python analise.py --exportar-mapa
 - `resultados/boxplot.png`: distribuição dos preços de lácteos.
 - `resultados/barras.png`: desconto médio por categoria, incluindo descontos zero.
 - `resultados/mapa.png`: imagem do treemap.
-- `resultados/mapa_interativo.html`: treemap completo, utilizável sem internet.
-- `resultados/interpretacao.md`: respostas e interpretação dos resultados.
-- `resultados/outliers.csv`: os 43 registros acima do limite de 6.119.
-- Tabelas CSV com estatísticas por categoria e descontos por categoria/marca.
+
+Ao executar o código, também são gerados localmente o mapa interativo HTML,
+a interpretação em Markdown, a lista de outliers e as tabelas estatísticas CSV.
+Esses arquivos são ignorados pelo Git.
 
 ## Principais resultados e critérios
 
